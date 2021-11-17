@@ -1,0 +1,28 @@
+<div class="row" style="margin-top: 5em;">
+    <div class="col-3" *ngFor="let i of obs | async" style="margin-bottom: 5em;">
+        <div class="card bg-light text-center p-3 border-0">
+            <div style="margin-top: -3rem;" class="mb-4">
+            <img src="https://www.themealdb.com/images/ingredients/{{i.strIngredient}}-small.png" style="border: 3px solid #ccc;
+            background: #000;
+            border-radius: 50%;
+            padding: 0.5rem;
+            box-shadow: 0 10px 19px 0px #777;" />
+            </div>
+            <h6 class="pb-3" style="border-bottom: 1px solid #ccc;">{{i.strIngredient}}</h6>
+            <p class="text-black-50 pt-2 text-left" style="font-size: 0.8em;
+            font-weight: 500;">{{shortenDescription(i.strDescription)}}...</p>
+            <button class="brand-btn mt-2 py-1" style="font-size: 0.9rem;" [routerLink]="['/recipes']" [queryParams]="{type: 'i', value: i.strIngredient}">
+                Explore Recipes
+                <mat-icon class="v-align-middle pl-2">arrow_forward</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-paginator 
+            [length]="ingredients?.length"
+            [pageSize]="20">
+        </mat-paginator>
+    </div>
+</div>

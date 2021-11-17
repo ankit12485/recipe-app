@@ -1,0 +1,44 @@
+API to insert records in DB----------------------
+
+Endpoint: localhost:3000/comments/list
+Method: POST
+Body:   
+{
+    "recipeId": 2,
+    "commentText": "Comment 2",
+    "updatedAt": "11 Nov 18:02"
+}
+
+==========================================================
+
+API to fetch/read records from the DB------------
+
+Endpoint: localhost:3000/comments/list
+Method: GET
+
+==========================================================
+
+API to fetch a specific record by id-------------
+
+Endpoint: localhost:3000/comments/list/<id>
+Method: GET
+
+==========================================================
+
+API to update a record in DB----------------------
+
+Endpoint: localhost:3000/comments/list/<id>
+Method: PUT
+Body:   
+{
+    "recipeId": 2,
+    "commentText": "Comment 2",
+    "updatedAt": "11 Nov 18:02"
+}
+
+==========================================================
+
+API to delete a record in DB----------------------
+
+Endpoint: localhost:3000/comments/list/<id>
+Method: DELETE

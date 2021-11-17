@@ -1,0 +1,22 @@
+<div class="row" style="margin-top: 5em;">
+    <div class="col-3" *ngFor="let i of obs | async" style="margin-bottom: 5em;">
+        <div class="card bg-light text-center p-3 border-0">
+            <div style="margin-top: -3rem;" class="mb-3">
+            <img src="{{i.strMealThumb}}" class="w-100 rounded img-thumbnail" />
+            </div>
+            <h6 class="pb-3" style="border-bottom: 1px solid #ccc;">{{i.strMeal}}</h6>
+            <button class="brand-btn mt-2 py-1" style="font-size: 0.9rem;" [routerLink]="['/meal-of-the-day']" [queryParams]="{id: i.idMeal}">
+                Try This One
+                <mat-icon class="v-align-middle pl-2">arrow_forward</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <mat-paginator 
+            [length]="recipes?.length"
+            [pageSize]="20">
+        </mat-paginator>
+    </div>
+</div>

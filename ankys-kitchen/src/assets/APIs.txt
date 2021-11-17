@@ -1,0 +1,31 @@
+List all meal categories
+www.themealdb.com/api/json/v1/1/categories.php
+
+Lookup full meal details by id
+www.themealdb.com/api/json/v1/1/lookup.php?i=52772
+
+Images
+
+Meal Thumbnail Images
+Add /preview to the end of the meal image URL
+/images/media/meals/llcbn01574260722.jpg/preview
+
+Ingredient Thumbnail Images
+www.themealdb.com/images/ingredients/Lime.png
+www.themealdb.com/images/ingredients/Lime-Small.png
+
+Search meal by name
+www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+
+List all meals by first letter
+www.themealdb.com/api/json/v1/1/search.php?f=a
+
+List all Categories, Area
+www.themealdb.com/api/json/v1/1/list.php?c=list
+www.themealdb.com/api/json/v1/1/list.php?a=list
+
+Filter by Category
+www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+
+Filter by Area
+www.themealdb.com/api/json/v1/1/filter.php?a=Canadian

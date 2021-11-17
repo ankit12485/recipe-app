@@ -1,0 +1,25 @@
+.brand-logo{
+    span{
+        font-size: 1.8rem;
+    }
+}
+.menu-wrapper{
+    a:hover{
+        color: initial;
+        text-decoration: none;
+    }
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 2;
+}
+  
+.dropdown-content a {
+    display: block;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}

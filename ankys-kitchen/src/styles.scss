@@ -1,0 +1,35 @@
+@import 'assets/styles/bootstrap';
+
+$darkColor: #263238;
+$brandColor: #ff725e;
+
+.text-brand-dark{
+    color: $darkColor;
+}
+.text-brand{
+    color: $brandColor;
+}
+.brand-btn{
+    background: $brandColor;
+    border-radius: 5px;
+    border: none;
+    padding: 0.6rem 2rem;
+    color: #fff;
+    border: 2px solid $brandColor;
+}
+.brand-btn-light{
+    background: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 0.6rem 2rem;
+    color: $brandColor;
+    border: 2px solid $brandColor;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.v-align-middle{
+    vertical-align: middle;
+}
+.loader-specific{
+    overflow: hidden;
+}
